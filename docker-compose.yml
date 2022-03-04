@@ -3,9 +3,9 @@ networks:
  campus_virtual:
 
 services:
-  ud-repository-client:
-     image: planesticud/ud-repository-client:latest
-     container_name: ud-repository-client
+  ud-observatorio-cliente:
+     image: planesticud/ud-observatorio-cliente:latest
+     container_name: ud-observatorio-cliente
      restart: on-failure
      env_file:
         - .env
@@ -13,10 +13,10 @@ services:
         - campus_virtual
      labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.ud-repository-client.rule=Host(`observatorio.planestic.udistrital.edu.co`)"
-      - "traefik.http.routers.ud-repository-client.tls=true"
-      - "traefik.http.routers.ud-repository-client.tls.certresolver=le"
-      - "traefik.http.services.ud-repository-client.loadbalancer.server.port=80"           
+      - "traefik.http.routers.ud-observatorio-cliente.rule=Host(`observatorio.planestic.udistrital.edu.co`)"
+      - "traefik.http.routers.ud-observatorio-cliente.tls=true"
+      - "traefik.http.routers.ud-observatorio-cliente.tls.certresolver=le"
+      - "traefik.http.services.ud-observatorio-cliente.loadbalancer.server.port=80"           
 networks:
   campus_virtual:
     external: true
