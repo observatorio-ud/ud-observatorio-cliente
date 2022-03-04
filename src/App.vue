@@ -43,7 +43,7 @@
          
             <a class="pull-right sinLine mr-2" 
           v-else 
-          href="https://observatorio.planestic.udistrital.edu.co/api/google" >
+          href="https://apiobservatorio.planestic.udistrital.edu.co/api/google" >
          
  <!-- 
           <a
