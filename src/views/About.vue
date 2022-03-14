@@ -1,135 +1,111 @@
 <template>
   <v-container grid-list-xl>
-    <v-card>
+    <center>
+    <v-card  max-width="1200px">
       <v-toolbar flat> </v-toolbar>
       <v-tabs vertical>
         <v-tab>
-          <v-icon left> mdi-account </v-icon>
-          OBJETIVOS
+          
+          <h3>MISIÓN</h3>
         </v-tab>
         <v-tab>
-          <v-icon left> mdi-lock </v-icon>
-          LÍNEAS DE ACCIÓN
+          <h3>
+          VISIÓN
+           </h3>
         </v-tab>
         <v-tab>
-          <v-icon left> mdi-access-point </v-icon>
-          EQUIPO DE TRABAJO
+          <h3>
+          OBJETIVO
+           </h3>
+        </v-tab>
+        <v-tab>
+           <h3>
+          LÍNEAS DE INTERÉS
+           </h3>
         </v-tab>
 
         <v-tab-item>
           <v-card flat>
-            <v-card-text>
-              <h3>
-                Desarrollar investigación orientada a fortalecer y contribuir a
-                la creación de nuevas tecnologías e innovación tecnológica y
-                pedagógica en el ámbito de la educación; favoreciendo el uso y
-                apropiación de las tecnologías de la información y la
-                comunicación
-              </h3>
-              <br />
-              <h3>
-                Mejorar el conocimiento sobre tendencias en educación y el uso
-                de las TIC en el proceso, por medio del análisis de datos
-                existentes y el desarrollo de proyectos de investigación.
-              </h3>
-              <br />
-              <h3 class="mb-0">
-                Desarrollar medios de difusión eficientes, con el fin de dar a
-                conocer información de interés sobre las tendencias en educación
-                haciendo uso de TIC
-              </h3>
+            <v-card-text >
+              <p class="text-h6 text-lg-left" >
+                Promover procesos de vigilancia, adquisición y transferencia de
+                conocimientos relacionados con el uso y apropiación de las TIC
+                en la Educación, con el fin de aportar a la toma de decisiones
+                en el marco del Plan Estratégico de Desarrollo de la Universidad
+                Distrital Francisco José de Caldas.
+              </p>
             </v-card-text>
           </v-card>
         </v-tab-item>
         <v-tab-item>
           <v-card flat>
             <v-card-text>
-              <h3>
-                Construcción de seguridad informática, que favorezca las buenas
-                prácticas en el manejo, uso, sensibilización, apropiación,
-                promoción de la TIC, que genere bienestar en la comunidad
-              </h3>
+              <p class="text-h6 text-lg-left">
+                El Observatorio TIC en Educación OBTICUD será un puente para
+                construir relaciones de gran importancia entre la Universidad
+                Distrital Francisco José de Caldas y la ciudad-región, el país y
+                el mundo, a partir de la generación de iniciativas que promuevan
+                el libre acceso y divulgación de conocimiento relacionado con el
+                uso y apropiación de las TIC en la Educación.
+              </p>
               <br />
-              <h3>Habilidades profesor virtual</h3>
-              <br />
-              <h3>Estudio y desarrollo de nuevas tecnologías</h3>
-              <br />
-              <h3>
-                Enfoques y prácticas pedagógicas y didácticas en el uso y
-                apropiación de TIC
-              </h3>
-              <br />
-              <h3 class="mb-0">
-                Estudios de impactos, apropiación y tendencias en cultura
-                digital y cibercultura
-              </h3>
             </v-card-text>
           </v-card>
         </v-tab-item>
         <v-tab-item>
           <v-card flat>
             <v-card-text>
-              <h2>Investigador Principal</h2>
+              <p class="text-h6 text-lg-left">
+                Consolidar una comunidad académico-investigativa cuya práctica
+                común se oriente a la captura, procesamiento, análisis y
+                divulgación de acontecimientos, datos e información relacionada
+                con el uso y apropiación de TIC en Educación, tanto a nivel
+                interno de la Universidad Distrital Francisco José de Caldas,
+                como en el ámbito de la ciudad-región, del país y a nivel
+                internacional, con el fin de generar conocimientos que aporten a
+                la toma de decisiones y solución de problemáticas emergentes en
+                el área.
+              </p>
+            </v-card-text>
+          </v-card>
+        </v-tab-item>
+        <v-tab-item>
+          <v-card flat>
+            <v-card-text class="text-h6 text-lg-left">
+              <h3>Prácticas educativas innovadoras</h3>
+
+              <p >
+                Se enfoca en monitorear y analizar prácticas educativas en la
+                educación superior relacionadas con el uso y apropiación de las
+                TIC para apoyar procesos educativos en entornos presenciales,
+                virtuales e híbridos.
+              </p>
               <br />
-              <ul>
-                <li>Dicho de una mujer: Viva, pronta y aguda.</li>
-                <li>
-                  Recolección, análisis y montaje de contenidos relacionados con
-                  los campos de acción de OBTICUD
-                </li>
-                <li>
-                  Revisión y aprobación de material propuesto para el
-                  observatorio, de acuerdo a líneas temáticas de OBTICUD para
-                  difusión
-                </li>
-                <li>Mantenimiento y actualización del sitio web</li>
-                <li>
-                  Velar por el alcance de objetivos y propósito principal del
-                  observatorio
-                </li>
-              </ul>
+              <h3>Investigación de las TIC en la educación</h3>
+
+              <p >
+                Se enfoca en analizar y sistematizar proyectos de investigación
+                en el área de TIC en Educación, realizados tanto en espacios
+                formales (programas de pregrado y posgrado, grupos y semilleros
+                de investigación, etc.) como no formales (organizaciones no
+                gubernamentales, simposios, seminarios, etc.).
+              </p>
               <br />
-              <h2>Mesa de trabajo</h2>
+              <h3>Las TIC en educación en cifras</h3>
+
+              <p >
+                Se enfoca en generar estadísticas relacionadas con la
+                disponibilidad y acceso a dispositivos tecnológicos,
+                conectividad y recursos educativos, plataformas, observatorios,
+                comunidades y/o redes sociales orientadas al uso educativo de
+                las TIC tanto al interior como exterior de la universidad.
+              </p>
               <br />
-              <ul>
-                <li>
-                  Comité PlanesTIC, agendará reunión una vez al mes para abordar
-                </li>
-                <li>Revisión del observatorio</li>
-                <li>Propuestas de nuevas líneas</li>
-                <li>Lineamientos</li>
-                <li>
-                  Planteamiento, revisión y aprobación de estrategias de
-                  reconocimiento y difusión
-                </li>
-                <li>Generar una red de conocimiento con expertos</li>
-              </ul>
-              <br />
-              <h2>Diseñador</h2>
-              <br />
-              <ul>
-                <li>
-                  Diseñar todas las piezas análogas y digitales que se ajusten a
-                  los objetivos de difusión del observatorio OBTICUD.
-                </li>
-                <li>
-                  Asesorar todos los aspectos visuales del observatorio para
-                  mantener la imagen institucional.
-                </li>
-              </ul>
-              <br />
-              <h2>Corrector de estilo</h2>
-              <br />
-              <ul>
-                <li>
-                  Revisar gramática, sintaxis y estilo de los textos antes de
-                  pasar a proceso de publicación.
-                </li>
-              </ul>
             </v-card-text>
           </v-card>
         </v-tab-item>
       </v-tabs>
     </v-card>
+    </center>
   </v-container>
 </template>

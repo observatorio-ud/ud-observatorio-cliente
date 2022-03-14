@@ -2,12 +2,14 @@
   <div>
     <div v-if="!isMobile" class="banner-all" :style="myStyle">
       <img
-        class="logo-planestic1"
-        src="./assets/images/LOGO-UD-BLANCO-13-13.png"
+       width="285px"
+      class="logo-planestic1" 
+        src="./assets/images/logo_planestic2-01.png"
       />
       <img
-        class="logo-planestic2"
-        src="./assets/images/logo_planestic2-01.png"
+       width="155px"
+         class="logo-planestic2"
+        src="./assets/images/LOGO-UD-BLANCO-13-13.png"
       />
     </div>
     <v-app>
@@ -16,10 +18,9 @@
           @click="menu_izq = !menu_izq"
           v-if="isMobile"
         ></v-app-bar-nav-icon>
+
         <v-toolbar-title>
-          <div class="d-flex align-center mr-6">
-            {{ tam }} &nbsp; OBSERVATORIO &nbsp;
-          </div>
+          <div class="d-flex align-center mr-6">&nbsp; OBTICUD &nbsp;</div>
         </v-toolbar-title>
 
         <v-tabs align-with-title dark v-if="!isMobile">
@@ -45,14 +46,16 @@
           v-else 
           href="https://apiobservatorio.planestic.udistrital.edu.co/api/google" >
          
- <!-- 
+   <!-- 
           <a
             class="pull-right sinLine mr-2"
             v-else
             href="http://192.168.0.6:3025/google"
-          >
-           -->
-            <v-icon> mdi-account </v-icon>
+          > -->
+            <v-btn icon>
+              <v-icon> mdi-account </v-icon>
+              Acceder &nbsp;&nbsp;&nbsp;
+            </v-btn>
           </a>
         </div>
       </v-app-bar>
@@ -60,7 +63,7 @@
       <v-navigation-drawer v-model="menu_izq" absolute>
         <v-list-item>
           <v-list-item-content>
-            <v-list-item-title>OBSERVATORIO</v-list-item-title>
+            <v-list-item-title>OBTICUD</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -325,7 +328,10 @@ export default {
     ],
     buttons: [
       { text: "Inicio", route: "/" },
-      { text: "Acerca de", route: "/about" },
+      { text: "NOSOTROS", route: "/about" },
+      { text: "LÍNEAS DE INTERÉS", route: "/" },
+      { text: "MESAS DE TRABAJO", route: "/" },
+      { text: "CONTÁCTENOS", route: "/" },
     ],
     isMobile: false,
     url_image: "",
@@ -480,12 +486,10 @@ export default {
           console.log("okkkdfd");
           this.buttons.push({ text: "Usuarios", route: "/users" });
         }
-        
       }
     },
   },
   mounted() {
-  
     this.onName();
     this.onOtros();
 
