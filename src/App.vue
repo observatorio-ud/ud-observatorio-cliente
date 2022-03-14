@@ -2,17 +2,16 @@
   <div>
     <div v-if="!isMobile" class="banner-all" :style="myStyle">
       <img
-       width="285px"
-      class="logo-planestic1" 
+        width="285px"
+        class="logo-planestic1"
         src="./assets/images/logo_planestic2-01.png"
       />
       <img
-       width="155px"
-         class="logo-planestic2"
+        width="155px"
+        class="logo-planestic2"
         src="./assets/images/LOGO-UD-BLANCO-13-13.png"
       />
-      &nbsp;
-      &nbsp;
+      &nbsp; &nbsp;
     </div>
     <v-app>
       <v-app-bar app color="#00ACC1" style="position: absolute" dark>
@@ -43,17 +42,18 @@
               <img :src="url_image" :alt="name" />
             </v-avatar>
           </div>
-         
-            <a class="pull-right sinLine mr-2" 
-          v-else 
-          href="https://apiobservatorio.planestic.udistrital.edu.co/api/google" >
-         
-   <!-- 
+
+          <a
+            class="pull-right sinLine mr-2"
+            v-else
+            href="https://apiobservatorio.planestic.udistrital.edu.co/api/google"
+          >
+            <!--
           <a
             class="pull-right sinLine mr-2"
             v-else
             href="http://192.168.0.6:3025/google"
-          > -->
+          >-->
             <v-btn icon>
               <v-icon> mdi-account </v-icon>
               Acceder &nbsp;&nbsp;&nbsp;
@@ -215,6 +215,8 @@
                           >
                             {{ nos.name }}
                           </a>
+                          <br />
+                          <br />
                         </v-spacer>
                       </v-card-text>
                       <v-divider></v-divider>
@@ -238,6 +240,8 @@
                           >
                             {{ nos.name }}
                           </a>
+                          <br />
+                          <br />
                         </v-spacer>
                       </v-card-text>
                       <v-divider></v-divider>
@@ -261,6 +265,8 @@
                           >
                             {{ nos.name }}
                           </a>
+                          <br />
+                          <br />
                         </v-spacer>
                       </v-card-text>
                       <v-divider></v-divider>
@@ -510,8 +516,8 @@ export default {
 }
 .logo-planestic2 {
   max-height: 100px;
-  margin: auto;
-  margin-top: 5px;
+  margin-right: 20px;
+
   float: right;
 }
 .backStyle {
