@@ -11,6 +11,8 @@
          class="logo-planestic2"
         src="./assets/images/LOGO-UD-BLANCO-13-13.png"
       />
+      &nbsp;
+      &nbsp;
     </div>
     <v-app>
       <v-app-bar app color="#00ACC1" style="position: absolute" dark>
@@ -278,7 +280,7 @@
                 </v-card-title>
                 <v-card-text class="text-lg-center">
                   Coordinador <br />
-                  José Ignacio Palacios <br />
+                  Fernando Martínez Rodríguez <br />
                   coordinadorplanestic@udistrital.edu.co
                 </v-card-text>
                 <v-divider></v-divider>
