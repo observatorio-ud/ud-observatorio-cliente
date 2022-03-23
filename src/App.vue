@@ -2,7 +2,7 @@
   <div>
     <div v-if="!isMobile" class="banner-all" :style="myStyle">
       <img
-        width="285px"
+        width="310px"
         class="logo-planestic1"
         src="./assets/images/logo_planestic2-01.png"
       />
@@ -43,17 +43,18 @@
             </v-avatar>
           </div>
 
-          <a
+         <a
             class="pull-right sinLine mr-2"
             v-else
             href="https://apiobservatorio.planestic.udistrital.edu.co/api/google"
           >
-            <!--
+         <!--   
           <a
             class="pull-right sinLine mr-2"
             v-else
             href="http://192.168.0.6:3025/google"
-          >-->
+          >
+           -->
             <v-btn icon>
               <v-icon> mdi-account </v-icon>
               Acceder &nbsp;&nbsp;&nbsp;
@@ -172,13 +173,13 @@
                   <v-spacer></v-spacer>
                   Acuerdo de creación Nº 10 de 1948 del Concejo de Bogotá.
                   <v-spacer></v-spacer>
-                  Acreditación Institucional de Alta Calidad - Resolucion Nº
+                  Acreditación Institucional de Alta Calidad - Resolución Nº
                   23096 del 15 de diciembre de 2016.
                 </v-card-text>
                 <v-divider></v-divider>
                 <br />
                 <v-card-title class="justify-center">
-                  Planestic - UD
+                  PlanEsTIC - UD
                 </v-card-title>
                 <v-card-text class="text-lg-center">
                   Plan Estratégico en Tecnologías de la Información y la
@@ -311,7 +312,7 @@
         <v-card-text>
           <strong>
             © Copyright {{ new Date().getFullYear() }} — Sitio creado y
-            administrado por Planestic-UD</strong
+            administrado por PlanEsTIC-UD</strong
           >
         </v-card-text>
       </v-card>
@@ -337,7 +338,7 @@ export default {
     buttons: [
       { text: "Inicio", route: "/" },
       { text: "NOSOTROS", route: "/about" },
-      { text: "LÍNEAS DE INTERÉS", route: "/" },
+      { text: "LÍNEAS DE INTERÉS", route: "/LineasInteres" },
       { text: "MESAS DE TRABAJO", route: "/" },
       { text: "CONTÁCTENOS", route: "/" },
     ],
@@ -390,15 +391,15 @@ export default {
     //footer
     nosotros: [
       {
-        name: "Acerca de Planestic",
+        name: "Acerca de PlanEsTIC-UD",
         route: "https://planestic.udistrital.edu.co/acerca-de-planestic",
       },
       {
-        name: "Comité Planestic",
+        name: "Comité PlanEsTIC-UD",
         route: "https://planestic.udistrital.edu.co/comite-planestic",
       },
       {
-        name: "Grupo Planestic",
+        name: "Grupo PlanEsTIC-UD",
         route: "https://planestic.udistrital.edu.co/grupo_planestic",
       },
       {
@@ -406,8 +407,8 @@ export default {
         route: "https://planestic.udistrital.edu.co/campos-de-accion",
       },
       {
-        name: "Observatorio UD",
-        route: "https://planestic.udistrital.edu.co/observatorio-ud",
+        name: "Repositorio RDigital-UD",
+        route: "https://repository.planestic.udistrital.edu.co/",
       },
       {
         name: "Educación virtual",
@@ -485,7 +486,7 @@ export default {
     },
     onResize() {
       this.tam = window.innerWidth;
-      this.isMobile = window.innerWidth < 809;
+      this.isMobile = window.innerWidth < 970;
       // window.addEventListener("resize", this.onResize, { passive: true });
     },
     onOtros() {
@@ -513,6 +514,8 @@ export default {
 }
 .logo-planestic1 {
   margin-left: 20px;
+  margin-top: 10px;
+  margin: 10px;
 }
 .logo-planestic2 {
   max-height: 100px;

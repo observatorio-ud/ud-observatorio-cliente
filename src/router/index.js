@@ -19,6 +19,27 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
+    path: '/LineasInteres',
+    name: 'LineasInteres',
+    component: () => import('../views/LineasInteres.vue')
+  },
+  {
+    path: '/Linea1',
+    name: 'Linea1',
+    component: () => import('../views/Linea1.vue')
+  },
+  {
+    path: '/Linea2',
+    name: 'Linea2',
+    component: () => import('../views/Linea2.vue')
+  },
+  {
+    path: '/Linea3',
+    name: 'Linea3',
+    component: () => import('../views/Linea3.vue')
+  },
+
+  {
     path: '/grid',
     name: 'grid',
     component: () => import(/* webpackChunkName: "about" */ '../views/Grid.vue')
